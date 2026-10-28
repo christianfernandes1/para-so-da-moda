@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paraiso da moda</title>
+
+    <style>
+        body {
+            background-color: snow;
+        }
+
+        .cabecalho {
+            background-color:hotpink;
+            height: 200px;
+            width: 1890px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cabecalho h1 {
+            margin: 0;
+            font-size: 90px;
+            font-family: Snell Roundhand;
+        }
+
+        .subtitulo {
+            text-align: center;
+        }
+
+        .titulo-catalogo {
+            text-align: center;
+            font-size: 40px;
+            font-family:helvetica
+        }
+       #titulo {
+    text-align: center;
+}
+#resultado {
+            display: none;
+            margin-top: 25px;
+            padding: 20px;
+            border-radius: 12px;
+            background: #e8f5e9;
+            border: 2px solid #4caf50;
+        }
+
+        #agradecimento {
+            font-size: 21px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .resumo {
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: hotpink;
+            color: white;
+            margin-top: 30px;
+        }
+#mensagem {
+    text-align: center;
+}
+
+#mensagem {
+    text-align: center;
+}
+
+#numero {
+    text-align: center;
+}
+
+button {
+    margin: 0 5px;
+}
+ {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        header {
+            background: #111;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .produto {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .produto-item {
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            padding: 15px;
+            cursor: pointer;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .produto-item:hover {
+            border-color: #111;
+            transform: translateY(-3px);
+        }
+
+        .produto-item.selecionado {
+            border-color: #111;
+            background: #f0f0f0;
+        }
+
+        .produto-item h3 {
+            margin-bottom: 10px;
+        }
+
+        .preco {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .campo {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        select,
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+               #resultado {
+            display: none;
+            margin-top: 25px;
+            padding: 20px;
+            border-radius: 12px;
+            background: #e8f5e9;
+            border: 2px solid #4caf50;
+        }
+
+        #agradecimento {
+            font-size: 21px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .resumo {
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: hotpink;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+<div class="cabecalho">
+    <h1>Paraíso da Moda</h1>
+</div>
+
+<div class="subtitulo">
+    <h3><i><strong>Proporcionamos a melhor qualidade da região!!</strong></i></h3>
+</div>
+
+</header>
+
+
+
+<h2><i>Seja bem-vinda(o) ao Paraíso da Moda!</i></h2>
+
+<h4><p>um espaço criado para quem busca estilo, qualidade e conforto em um só lugar.
+Nossa missão é oferecer roupas que acompanhem as tendências da moda sem abrir mão da qualidade e do excelente custo-benefício. Trabalhamos com uma seleção de peças para diferentes estilos e ocasiões, ajudando nossos clientes a expressarem sua personalidade por meio da moda.
+Na Paraíso da Roupa, acreditamos que vestir-se bem é uma forma de transmitir confiança e bem-estar. Por isso, buscamos proporcionar uma experiência de compra prática, segura e agradável, com atendimento dedicado e produtos cuidadosamente escolhidos.
+Seja para renovar o guarda-roupa, encontrar um look especial ou acompanhar as novidades da estação, estamos aqui para oferecer opções que unem elegância, conforto e versatilidade.
+Paraíso da Roupa o lugar onde estilo, qualidade e boas escolhas se encontram.</p></h4>
+
+<br>
+
+
+
+<h2 class="titulo-catalogo">Catálogo</h2>
+
+<div class="catalogo">
+
+<img src="https://images.elle.com.br/2025/02/roupas-elegantes-para-o-dia-a-dia-00.jpg" width="300"> <p><strong>Conjunto Off-White com Blazer e Saia Curta R$320</strong><br>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROxsbUA39VgvnxWj8fM9Xnv5qIEZuidZ6DKqYOyVjEBxZme5NpU_yRx-k&s=10" width="281"> <p><strong>Conjunto Comfy de Tricô Tarracota R$290</strong></p><br>
+
+
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyMSM-juk13iKGAgSbjLoA2N5MZWSCPIU_PI1poKc_nQitl3RqMWbBk04&s=10" width="320"> <p><strong>Conjunto Blusa com Babados e Calça Reta R$300</strong></p><br>
+
+
+
+
+<img src="https://dot.cdn.magazord.com.br/img/2026/06/produto/19618/10-macacao-sem-alcas-com-calca-drapeada-terracota.jpeg?ims=475x650" width="274"> <p><strong>Macacão Longo Terracota R$350</strong></p><br>
+
+
+
+
+<img src="https://closetfeminino.com.br/wp-content/uploads/2026/08/closetfeminino_com_br-vestido-midi-frente-unica-com-costas-nua-juh-6-960x1440.jpeg" width="250"> <p><strong>Vestido Longo Preto Costas Nuas R$200</strong></p><br>
+
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>🛍️ Faça seu pedido</h2>
+
+        <br>
+
+        <div class="produto">
+
+            <div class="produto-item" onclick="selecionarProduto('Conjunto', 320.00, this)">
+                <h3>👕Conjunto</h3>
+                <p class="preco">R$320,00</p>
+            </div>
+
+            <div class="produto-item" onclick="selecionarProduto('Conjunto Comfy', 290.00, this)">
+                <h3>👖Conjunto Comfy</h3>
+                <p class="preco">R$290,00</p>
+            </div>
+
+            <div class="produto-item" onclick="selecionarProduto('Conjunto babados e calça reta', 300.00, this)">
+                <h3>🧥Conjunto babados e calça reta'</h3>
+                <p class="preco">R$ 300,00</p>
+            </div>
+
+            <div class="produto-item" onclick="selecionarProduto('Macacão longo',350.00, this)">
+                <h3>👖Macacão longo</h3>
+                <p class="preco">R$350,00</p>
+            </div>
+<div class="produto-item" onclick="selecionarProduto('Vestido longo', 200.00, this)">
+                <h3>👗Vestido longo</h3>
+                <p class="preco">R$ 200,00</p>
+            </div>
+
+
+        </div>
+
+        <div class="campo">
+
+            <label for="tamanho">
+                📏 Selecione o tamanho:
+            </label>
+
+            <select id="tamanho">
+                <option value="">Selecione...</option>
+                <option value="PP">PP</option>
+                <option value="P">P</option>
+                <option value="M">M</option>
+                <option value="G">G</option>
+                <option value="GG">GG</option>
+                <option value="XG">XG</option>
+            </select>
+
+        </div>
+
+        <div class="campo">
+
+            <label for="cor">
+                🎨 Selecione a cor:
+            </label>
+
+            <select id="cor">
+                <option value="">Selecione...</option>
+                <option value="Preto">Preto</option>
+                <option value="Branco">Branco</option>
+                <option value="Azul">Azul</option>
+                <option value="Vermelho">Vermelho</option>
+                <option value="Verde">Verde</option>
+                <option value="Rosa">Rosa</option>
+                <option value="Cinza">Cinza</option>
+            </select>
+
+        </div>
+
+        <div class="campo">
+
+            <label for="quantidade">
+                🔢 Quantidade:
+            </label>
+
+            <input 
+                type="number" 
+                id="quantidade"
+                min="1"
+                value="1"
+            >
+
+        </div>
+
+        <div class="campo">
+
+            <label for="nome">
+                👤 Nome do cliente:
+            </label>
+
+            <input 
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome"
+            >
+
+        </div>
+
+        <button onclick="finalizarCompra()">
+            FINALIZAR COMPRA
+        </button>
+
+        <div id="resultado">
+
+            <div id="agradecimento"></div>
+
+            <div class="resumo" id="resumoPedido"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<section>
+    <h2>Nossas Vantagens</h2>
+
+    <ul>
+        <li>
+            <h3>🚚 Frete Grátis</h3>
+            <p>Disponível para compras acima de R$ 150 todas as regiões</p>
+        </li>
+
+        <li>
+            <h3>🔄 1ª Troca Grátis</h3>
+            <p>Você tem o prazo de até 7 dias para realizar a sua troca sem custos</p>
+        </li>
+
+        <li>
+            <h3>💳 Até 6x Sem Juros</h3>
+            <p>Parcelamento facilitado em todas as bandeiras de cartões de crédito</p>
+        </li>
+
+        <li>
+            <h3>🔒 Compra Segura</h3>
+            <p>Seus dados protegidos e navegação criptografada com certificado SSL</p>
+        </li>
+    </ul>
+</section>
+
+
+
+<br>
+
+<h3>
+    📍 Nosso Endereço:<br>
+</h3>
+
+<p>Rua Érico Veríssimo, 317 - Bairro Londrina, Santa Luzia - MG, CEP 33115-390</p>
+
+<p>
+    <a href="https://google.com" target="_blank">
+        Clique aqui para abrir este endereço no Google Maps
+    </a>
+</p>
+
+
+
+<br>
+
+<h3>Fale conosco:</h3>
+
+<img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" width="29">
+<a href="https://wa.me" target="_blank">WhatsApp</a><br>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" width="19">
+<a href="https://instagram.com" target="_blank">Siga no Instagram</a><br>
+
+<img src="https://images.icon-icons.com/1826/PNG/512/4202011emailgmaillogomailsocialsocialmedia-115677_115624.png" width="20">
+<a href="mailto:seuemail@://exemplo.com">Envie um e-mail</a>
+
+
+
+<footer>
+    <p>&copy; Paraíso da moda. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+
+    let produtoSelecionado = "";
+    let precoProduto = 0;
+
+    
+    function selecionarProduto(nome, preco, elemento) {
+
+        produtoSelecionado = nome;
+        precoProduto = preco;
+
+        
+        let produtos = document.querySelectorAll(".produto-item");
+
+        produtos.forEach(function(item) {
+            item.classList.remove("selecionado");
+        });
+
+      
+        elemento.classList.add("selecionado");
+
+    }
+
+
+    
+    function finalizarCompra() {
+
+        let nome = document.getElementById("nome").value.trim();
+
+        let tamanho = document.getElementById("tamanho").value;
+
+        let cor = document.getElementById("cor").value;
+
+        let quantidade = parseInt(
+            document.getElementById("quantidade").value
+        );
+
+
+                if (produtoSelecionado === "") {
+
+            alert("Por favor, selecione uma roupa.");
+
+            return;
+        }
+
+
+       
+        if (nome === "") {
+
+            alert("Por favor, informe seu nome.");
+
+            document.getElementById("nome").focus();
+
+            return;
+        }
+
+
+       
+        if (tamanho === "") {
+
+            alert("Por favor, selecione o tamanho da roupa.");
+
+            document.getElementById("tamanho").focus();
+
+            return;
+        }
+
+
+       
+        if (cor === "") {
+
+            alert("Por favor, selecione a cor da roupa.");
+
+            document.getElementById("cor").focus();
+
+            return;
+        }
+
+
+      
+        if (isNaN(quantidade) || quantidade < 1) {
+
+            alert("Informe uma quantidade válida.");
+
+            return;
+        }
+
+
+     
+        let total = precoProduto * quantidade;
+
+
+       
+        let totalFormatado = total.toLocaleString(
+            "pt-BR",
+            {
+                style: "currency",
+                currency: "BRL"
+            }
+        );
+
+
+       
+        document.getElementById("agradecimento").innerHTML =
+            "🎉 Obrigado pela sua compra, " + nome + "!";
+
+
+       
+        document.getElementById("resumoPedido").innerHTML =
+
+            "<strong>Resumo do pedido:</strong><br><br>" +
+
+            "👕 Produto: " + produtoSelecionado + "<br>" +
+
+            "📏 Tamanho: " + tamanho + "<br>" +
+
+            "🎨 Cor: " + cor + "<br>" +
+
+            "🔢 Quantidade: " + quantidade + "<br>" +
+
+            "💰 Valor unitário: " +
+            precoProduto.toLocaleString(
+                "pt-BR",
+                {
+                    style: "currency",
+                    currency: "BRL"
+                }
+            ) + "<br>" +
+
+            "<strong>💵 Total: " + totalFormatado + "</strong><br><br>" +
+
+            "Seu pedido foi registrado com sucesso!<br>" +
+
+            "Esperamos que você aproveite sua nova roupa. ❤️";
+
+
+       
+        document.getElementById("resultado").style.display = "block";
+
+
+        
+        document.getElementById("resultado").scrollIntoView({
+            behavior: "smooth"
+        });
+
+    }
+
+</script>
+
+</body>
+</html>
